@@ -1,0 +1,33 @@
+{
+  "name": "fruitbot",
+  "description": "An XMPP bot for tech teams.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/baseonmars/fruitbot",
+  "author": {
+    "name": "Dan Etherington (baseonmars)",
+    "email": "dan@baseonmars.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/baseonmars/fruitbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baseonmars/fruitbot/issues"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/baseonmars/fruitbot/blob/master/LICENSE-MIT"
+  }],
+  "main": "lib/fruitbot",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17",
+    "grunt-jasmine-node": ">= 0.0.5"
+  },
+  "keywords": []
+}

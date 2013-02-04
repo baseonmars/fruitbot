@@ -1,39 +1,27 @@
-Fruitbot
-========
+# fruitbot
 
-Fruitbot will act as a jabber bot that can sit in a teams room.
+An XMPP bot for tech teams.
 
-Initial features:
+## Getting Started
+Install the module with: `npm install fruitbot`
 
- * Display JIRA updates
- * Display git commit messages
- * Send Josh Top Gun facts at random intervals
+```javascript
+var fruitbot = require('fruitbot');
+fruitbot.awesome(); // "awesome"
+```
 
-## Usage
+## Documentation
+_(Coming soon)_
 
-Create a config.js in the same directory as fruitbat.js using sample.js as a guide
+## Examples
+_(Coming soon)_
 
-    var config = {};
+## Contributing
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
 
-    config.jid       = "you@example.com";
-    config.password  = "h<£$%TEfdsdfWQ";
-    config.room      = {};
-    config.room.jid  = "team@conference.example.com";
-    config.room.nick = "fruitbot";
+## Release History
+_(Nothing yet)_
 
-    module.exports = config;
-
-Then start it up:
-
-    node fruitbat.js 
-
-## Future development
-
- * Change ticket status.
- * Report teapot status
- * Report Bamboo build statuses
- * Print an ascii burndown
- * Trigger bamboo build
- * Search wiki
-
-
+## License
+Copyright (c) 2013 Dan Etherington (baseonmars)  
+Licensed under the MIT license.

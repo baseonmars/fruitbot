@@ -1,26 +1,46 @@
-# fruitbot
+Fruitbot
+========
 
 An XMPP bot for tech teams.
 
 ## Getting Started
+
+<em>note, this doesn't actually work yet</em>
+
 Install the module with: `npm install fruitbot`
 
-```javascript
-var fruitbot = require('fruitbot');
-fruitbot.awesome(); // "awesome"
-```
+Create a config.js file using config.sample.js as a guide.
 
-## Documentation
-_(Coming soon)_
+    var config = {};
 
-## Examples
-_(Coming soon)_
+    config.jid       = "you@example.com";
+    config.password  = "h<£$%TEfdsdfWQ";
+    config.room      = {};
+    config.room.jid  = "team@conference.example.com";
+    config.room.nick = "fruitbot";
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
+    module.exports = config;
 
-## Release History
-_(Nothing yet)_
+Write some code: 
+
+    var fb = new Fruitbot({config_path: "~/fruitbot_config.js"});
+    fb.connect(function() { console.log("online"); });
+
+Then start it up:
+
+    node test.js 
+
+## Future development
+
+ * Display JIRA updates
+ * Display git commit messages
+ * Send Josh Top Gun facts at random intervals
+ * Change ticket status.
+ * Report teapot status
+ * Report Bamboo build statuses
+ * Print an ascii burndown
+ * Trigger bamboo build
+ * Search wiki
 
 ## License
 Copyright (c) 2013 Dan Etherington (baseonmars)  
